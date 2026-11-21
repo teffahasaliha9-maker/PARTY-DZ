@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARTY DZ</title>
+<style>
+body {
+  margin: 0;
+  background: #101020;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+header {
+  background: #7025a8;
+  padding: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.container { padding: 20px; }
+.card {
+  background: #24243b;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+}
+button {
+  background: #a044d0;
+  color: white;
+  border: 0;
+  padding: 13px 25px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 0;
+  margin: 8px;
+}
+</style>
+</head>
+<body>
 
+<header>🎉 PARTY DZ 🇩🇿</header>
+
+<div class="container">
+
+<div class="card">
+<h2>مرحباً بك في PARTY DZ</h2>
+<p>عالم الدردشة والتعارف الصوتي</p>
+<input id="username" placeholder="اكتب اسمك">
+<br>
+<button onclick="login()">دخول</button>
+</div>
+
+<div class="card">
+<h2>🎤 غرف الدردشة الصوتية</h2>
+<button onclick="alert('قريباً سيتم تفعيل الغرف الصوتية')">دخول الغرف</button>
+</div>
+
+<div class="card">
+<h2>💬 المحادثات</h2>
+<button onclick="alert('قريباً')">المحادثات الخاصة</button>
+</div>
+
+<div class="card">
+<h2>🎁 الهدايا و VIP</h2>
+<button onclick="alert('قريباً')">استكشف الهدايا</button>
+</div>
+
+</div>
+
+<script>
+function login() {
+ let name = document.getElementById("username").value;
+ if(name.trim() === "") {
+  alert("اكتب اسمك أولاً");
+ } else {
+  alert("مرحباً بك يا " + name);
+ }
+}
+</script>
+
+</body>
+</html>
